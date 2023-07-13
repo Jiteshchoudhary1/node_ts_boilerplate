@@ -13,6 +13,7 @@ app.get('/', (req: Request, res: Response) => {
 app.listen(port, () => {
   let name;
   let name2;
-    console.log('server is run');
+  let name3;
+    console.log("server is run");
     console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
 });

@@ -8,9 +8,8 @@
         "build": "tsc && copy .env ./dist/.env",
         "start": "tsc && node dist/server.js",
         "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
-        "lint": "eslint . --ext .ts",
         "lint-and-fix": "eslint . --ext .ts --fix",
-        "lint1": "eslint src/**/*.ts",
+        "lint": "eslint src/**/*.ts",
         "format1": "eslint src/**/*.ts --fix",
         "format": "prettier --write ."
     },
@@ -37,7 +36,7 @@
     },
       "husky":{
         "hooks": {
-          "pre-commit": "npm run lint1"
+          "pre-commit": "npm run lint && npm run format1"
         }
       }
     
