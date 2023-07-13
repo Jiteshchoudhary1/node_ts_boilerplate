@@ -11,9 +11,10 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.listen(port, () => {
-  let name;
-  let name2;
-  let name3;
-    console.log("server is run");
+    let name;
+    let name2;
+    let name3;
+    console.log('server is run');
+    console.log('making some changes');
     console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
 });
