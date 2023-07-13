@@ -1,0 +1,46 @@
+export default {
+    defaultServerResponse: {
+        status: 400,
+        message: '',
+        data: {},
+        success: true,
+    },
+    controllerMessage: {
+        SUCCESS: 'Success',
+        CREATED: 'Created',
+        DELETED: 'deleted',
+    },
+    validationMessage: {
+        UNAUTHORIZE: 'You are not authorize to perfrom access',
+        INTERNAL_SERVER_ERROR: 'Something went wrong',
+        BAD_REQUEST: 'Invalid fields',
+        TOKEN_MISSING: 'Token missing from header',
+        SUB_USER_UPDATE_SUCCESS: 'Sub user updated successfully',
+        DUPLICATE_EMAIL: 'User already exist with given email',
+        QNA_NOT_FOUND: 'QnA Not found',
+        USER_NOT_FOUND: 'User not found',
+        EMAIL_VERIFICATION_TOKEN_EXPIRED: 'Token Expired',
+        ACCESS_DENIED_CONTACT_SUPPORT: 'Access denied! Please contact support',
+        INVALID_PASSWORD: 'Incorrect Password',
+        PASSWORD_CONFIRM_PASSWORD_MISMATCH: 'Password and confirm password not same',
+        INVALID_EMAIL_TOKEN: 'Invalid token or email',
+        DUPLICATE_CONVERSATION_FLOW: 'ConversationFlow with given name already exist! Please enter unique name',
+        EMAIL_VERIFICATION_PENDING: 'Email verification pending. Please check your mail.',
+        CONVERSATION_FLOW_LIMIT_REACHED: `Limit Reached. You can't create more conversation flow`,
+        INVALID_OWNER_CF: `Access Denied!. You are not the owner of request conversation flow`,
+        AUTHROIZATION_FAIELD: "You don't have enough permission to perform this action",
+        USER_ALREADY_SIGNUP: 'User has completed signup ',
+    },
+    serviceMessages: {
+        VERIFY_EMAIL: 'We have sent an email with a confirmation link to your email address. Please verify.',
+    },
+    userRole: {
+        Owner: 'owner',
+        Admin: 'admin',
+        Agent: 'agent',
+    },
+    userType: {
+        OWNER: 'owner',
+        SUB_USER: 'Subuser',
+    },
+};
